@@ -1,20 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
+<!--Alberto Perez-->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ng-container *ngIf="quote;">
+    
+    <ion-label>
+      <h3>{{quote.quote}}</h3><br>
+      
+    </ion-label>
+  
+  
+  <button  id='lol'(click)="ngOnInit()"><h3>new quote</h3></button>
+  <br>
+  <ion-header><h1>Formulario de peliculas</h1></ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div >
+    <ion-button (click)="a()">ir al fomulario</ion-button>
+    
+  
   </div>
+</ng-container>
 </ion-content>
